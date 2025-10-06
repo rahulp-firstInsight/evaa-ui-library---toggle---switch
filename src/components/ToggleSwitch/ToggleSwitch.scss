@@ -1,0 +1,44 @@
+.toggle-switch {
+  border-radius: 100px;
+  height: 28px;
+  overflow: hidden;
+  position: relative;
+  width: 64px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.toggle-switch .knob {
+  background-color: #ffffff;
+  border-radius: 100px;
+  width: 39px;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch.off {
+  background-color: #78787833;
+}
+
+.toggle-switch.off .knob {
+  height: 85.71%;
+  position: relative;
+  top: 7.14%;
+  left: 2px;
+}
+
+.toggle-switch.on {
+  align-items: center;
+  background-color: #34c759;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-switch.on .knob {
+  height: 24px;
+  margin-right: 2px;
+}
